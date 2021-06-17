@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+
+:root {
+    --main-gray-color: #1E1E1E;
+    --main-gray-light-color: #545454;
+    --main-black-color: #0F0F0F;
+    --main-orange-color: #FF7700;
+    --main-orange-dark-color: #BC4B00;
+    --main-yellow-color: #FFD800;
+}
+
+* {
+	font-family: 'MuseoModerno', cursive;
+    cursor: url('../images/cursor-default-32.png'), default;
+}
+
+body {
+    width: 100%;
+    background-color: var(--main-gray-color);
+    background-image: url('../images/background.jpg');
+}
+
+/* Página principal */
+
+.buttons-header {
+	margin-top: 20px;
+	right: 2%;
+	position: absolute;
+}
+
+.buttons-header li {
+	display: inline-block;
+    position: relative;
+}
+            
+nav li > ul {
+    display: none;
+}
+
+a {
+	margin-left: 35px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: var(--main-yellow-color);
+	text-decoration: none;
+	cursor: url('../images/cursor-pointer-32.png'), pointer;
+}
+
+a:hover {
+	color: var(--main-orange-color);
+    transition: color .3s;
+}
+
+.main-title {
+	color: var(--main-orange-color);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	font-size: 5em;
+	transform: translate(-50%, -50%);
+}
+
+.border-title {
+	color: var(--main-black-color);
+	position: absolute;
+	top: 40.2%;
+	left: 49.8%;
+	font-size: 5em;
+	transform: translate(-50%, -50%);
+}
+
+/* Registro y Login */
+
+.title-form {
+	background-color: var(--main-black-color);
+}
+
+.container-form {
+	color: var(--main-orange-color);
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	text-align: center;
+	font-weight: bold;
+	transform: translate(-50%, -50%);
+}
+
+.form-group {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: var(--main-black-color);
+}
+
+input {
+	font-size: 1.2em;
+}
+
+.button-normal {
+	padding: 3px;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: url('../images/cursor-pointer-32.png'), pointer;
+	background-color: var(--main-orange-dark-color);
+	padding: 3px;
+	border-radius: 3px;
+	border: none;
+}
+
+.button-normal:hover {
+	background-color: var(--main-gray-color);
+	color: var(--main-orange-color);
+}
+
+/* Rooms */
+
+
+.welcome-name {
+	margin-top: 35px;
+	text-align: center;
+	color: var(--main-orange-color);
+	font-size: 1.2em;
+	background-color: var(--main-gray-color);
+}
+
+.title-table {
+	color: var(--main-black-color);
+	background-color: white;
+}
+
+table {
+	background-color: var(--main-gray-light-color);
+}
+
+th {
+	background-color: var(--main-gray-color);
+	color: var(--main-orange-color);
+	height: 30px;
+	padding: 10px;
+	border-bottom: 1px solid var(--main-orange-color);
+}
+
+td {
+	color: var(--main-yellow-color);
+	height: 30px;
+	padding: 10px;
+	border-bottom: 1px solid var(--main-orange-color);
+}
+
+td > a {
+	color: white;
+	background-color: var(--main-orange-dark-color);
+	padding: 3px;
+	border-radius: 3px;
+	font-size: 0.8em;
+}
+
+td > a:hover {
+	color: #FFAC75;
+}
+
+tr:hover {
+  	background-color: var(--main-black-color);
+}
+
+/* Stay */
+
+.select-class {
+	margin-top: 15px;
+	color: var(--main-orange-color);
+	font-weight: bold;
+	font-size: 1.1em;
+	background-color: var(--main-black-color);
+	border: 1px solid var(--main-orange-color);
+	border-radius: 3px;
+}
+
+.button-stay {
+	padding: 3px;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: url('../images/cursor-pointer-32.png'), pointer;
+	background-color: var(--main-orange-dark-color);
+	padding: 3px;
+	border-radius: 3px;
+	border: none;
+}
+
+.button-stay:disabled {
+	background-color: var(--main-gray-light-color);
+	color: white;
+}
+
+/* Game */
+
+.board {
+    background:url(../images/tableroPxel.png) no-repeat;
+    background-size:cover;
+    width:500px;
+    height:503px;
+    float:left;
+    margin-left: 15px;
+    margin-top: 45px;
+}
+
+.board-ludo {
+	background:url(../images/tableroLudo.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.pawns{
+    width:25px;
+    height:25px;
+    border-radius:20px;
+    position:absolute;
+}
+
+.dice {
+	background-image:url(../images/dado.gif);
+	background-size: contain; 
+	width: 150px;
+	height: 150px; 
+	float: left;
+	margin-left: 25%;
+	margin-top: 35px;
+}
+
+.turn {
+	padding: 3px;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: url('../images/cursor-pointer-32.png'), pointer;
+	background-color: var(--main-orange-dark-color);
+	padding: 3px;
+	border-radius: 3px;
+	border: none;
+	text-align: center;
+	float: left;
+	margin-left: 26.5%;
+	margin-top: 35px;
+}
+
+.turn:hover {
+	background-color: var(--main-gray-color);
+	color: var(--main-orange-color);
+}
+
+/* Customize the label (the container) */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--main-orange-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
